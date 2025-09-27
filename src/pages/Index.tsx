@@ -74,7 +74,7 @@ function Index() {
               <Icon name="Wrench" size={32} className="text-primary" />
               <div>
                 <h1 className="text-xl font-bold text-gray-900">СантехМастер</h1>
-                <p className="text-sm text-gray-600">20+ лет опыта</p>
+                <p className="text-sm text-gray-600">12 лет опыта</p>
               </div>
             </div>
             
@@ -124,7 +124,7 @@ function Index() {
                 Надежные сантехнические услуги
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Более 20 лет опыта в решении любых сантехнических проблем. 
+                12 лет опыта в решении любых сантехнических проблем. 
                 Гарантия качества, честные цены, быстрый выезд мастера.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -255,7 +255,7 @@ function Index() {
                     <Icon name="Award" size={24} className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">20+ лет на рынке</h3>
+                    <h3 className="font-semibold text-lg mb-2">12 лет на рынке</h3>
                     <p className="text-gray-600">
                       Накопленный опыт позволяет решать задачи любой сложности
                     </p>
