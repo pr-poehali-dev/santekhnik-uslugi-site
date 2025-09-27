@@ -98,10 +98,16 @@ function Index() {
               ))}
             </nav>
 
-            <Button onClick={() => scrollToSection('call-master')} className="hidden md:flex">
-              <Icon name="Phone" size={16} className="mr-2" />
-              Вызвать мастера
-            </Button>
+            <div className="hidden md:flex gap-2">
+              <Button onClick={() => scrollToSection('call-master')} variant="outline" size="sm">
+                <Icon name="Phone" size={16} className="mr-2" />
+                Вызвать мастера
+              </Button>
+              <Button onClick={() => alert('Аварийный вызов: +7 (495) 123-45-67')} className="bg-red-600 hover:bg-red-700 text-white" size="sm">
+                <Icon name="Zap" size={16} className="mr-2" />
+                Аварийный 24/7
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -129,6 +135,14 @@ function Index() {
                 >
                   <Icon name="Phone" size={20} className="mr-2" />
                   Вызвать мастера
+                </Button>
+                <Button 
+                  size="lg" 
+                  className="bg-red-600 hover:bg-red-700 text-white"
+                  onClick={() => alert('Аварийный вызов: +7 (495) 123-45-67\nКруглосуточно без выходных!')}
+                >
+                  <Icon name="Zap" size={20} className="mr-2" />
+                  Аварийный 24/7
                 </Button>
                 <Button 
                   size="lg" 
@@ -274,12 +288,36 @@ function Index() {
               </div>
             </div>
             
-            <div>
+            <div className="space-y-6">
               <img 
                 src="/img/2a5b6d57-c12d-418a-9b8a-d75bbd166a81.jpg" 
                 alt="Качественные сантехнические работы" 
                 className="rounded-lg shadow-lg"
               />
+              
+              {/* Emergency Call Card */}
+              <Card className="border-red-200 bg-red-50">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                        <Icon name="Zap" size={24} className="text-red-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg text-red-800">Аварийная служба</h3>
+                        <p className="text-sm text-red-600">Круглосуточно без выходных</p>
+                      </div>
+                    </div>
+                    <Button 
+                      className="bg-red-600 hover:bg-red-700 text-white"
+                      onClick={() => alert('Аварийный вызов: +7 (495) 123-45-67\nКруглосуточно без выходных!')}
+                    >
+                      <Icon name="Phone" size={16} className="mr-2" />
+                      Вызвать сейчас
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
