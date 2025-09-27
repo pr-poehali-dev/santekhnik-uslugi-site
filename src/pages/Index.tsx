@@ -119,7 +119,7 @@ function Index() {
                 <Icon name="Phone" size={16} className="mr-2" />
                 Вызвать мастера
               </Button>
-              <Button onClick={() => alert('Аварийный вызов: +7 (495) 123-45-67')} className="bg-red-600 hover:bg-red-700 text-white" size="sm">
+              <Button onClick={() => alert('Аварийный вызов:\n+7 (978) 297-35-93\n+7 (978) 135-30-23')} className="bg-red-600 hover:bg-red-700 text-white" size="sm">
                 <Icon name="Zap" size={16} className="mr-2" />
                 Аварийный 24/7
               </Button>
@@ -326,7 +326,7 @@ function Index() {
                     </div>
                     <Button 
                       className="bg-red-600 hover:bg-red-700 text-white"
-                      onClick={() => alert('Аварийный вызов: +7 (495) 123-45-67\nКруглосуточно без выходных!')}
+                      onClick={() => alert('Аварийный вызов:\n+7 (978) 297-35-93\n+7 (978) 135-30-23\nКруглосуточно без выходных!')}
                     >
                       <Icon name="Phone" size={16} className="mr-2" />
                       Вызвать сейчас
@@ -419,7 +419,10 @@ function Index() {
               <CardContent className="p-6">
                 <Icon name="Phone" size={32} className="text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2">Телефон</h3>
-                <p className="text-gray-600">+7 (495) 123-45-67</p>
+                <div className="space-y-1">
+                  <p className="text-gray-600">+7 (978) 297-35-93</p>
+                  <p className="text-gray-600">+7 (978) 135-30-23</p>
+                </div>
                 <p className="text-sm text-gray-500">Прием звонков: 9:00 - 17:00</p>
               </CardContent>
             </Card>
@@ -463,17 +466,18 @@ function Index() {
             <div>
               <h4 className="font-semibold text-lg mb-4">Услуги</h4>
               <ul className="space-y-2 text-gray-400">
+                <li>Установка котлов</li>
+                <li>Теплые полы</li>
+                <li>Капельный полив</li>
                 <li>Аварийная сантехника</li>
-                <li>Установка оборудования</li>
-                <li>Замена труб</li>
-                <li>Ремонт смесителей</li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-semibold text-lg mb-4">Контакты</h4>
               <div className="space-y-2 text-gray-400">
-                <p>+7 (495) 123-45-67</p>
+                <p>+7 (978) 297-35-93</p>
+                <p>+7 (978) 135-30-23</p>
                 <p>info@santekhmaster.ru</p>
                 <p>Москва и Московская область</p>
               </div>
