@@ -366,7 +366,7 @@ function Index() {
                 <Icon name="Phone" size={32} className="text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2">Телефон</h3>
                 <p className="text-gray-600">+7 (495) 123-45-67</p>
-                <p className="text-sm text-gray-500">Круглосуточно</p>
+                <p className="text-sm text-gray-500">Прием звонков: 9:00 - 17:00</p>
               </CardContent>
             </Card>
             
@@ -383,8 +383,8 @@ function Index() {
               <CardContent className="p-6">
                 <Icon name="Clock" size={32} className="text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2">Режим работы</h3>
-                <p className="text-gray-600">24/7</p>
-                <p className="text-sm text-gray-500">Без выходных</p>
+                <p className="text-gray-600">Пн-Пт: 9:00 - 17:00</p>
+                <p className="text-sm text-gray-500">Аварийные вызовы 24/7</p>
               </CardContent>
             </Card>
           </div>
