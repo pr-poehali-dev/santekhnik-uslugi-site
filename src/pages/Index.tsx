@@ -278,7 +278,7 @@ function Index() {
                     <Icon name="Award" size={24} className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">12 лет на рынке</h3>
+                    <h3 className="font-semibold text-lg mb-2">16 лет на рынке</h3>
                     <p className="text-gray-600">
                       Накопленный опыт позволяет решать задачи любой сложности
                     </p>
@@ -342,6 +342,58 @@ function Index() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Наши работы
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Примеры выполненных проектов по установке оборудования и сантехнических работ
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img 
+                src="/img/20ca6770-16ee-42d8-b3f0-43be7dcc7a6b.jpg" 
+                alt="Установка газового котла" 
+                className="w-full h-64 object-cover"
+              />
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-lg mb-2">Установка газового котла</h3>
+                <p className="text-gray-600 text-sm">Профессиональный монтаж котла отопления с подключением всех систем</p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img 
+                src="/img/d69d8df5-ae1c-4113-9a91-c6fa74b54493.jpg" 
+                alt="Монтаж теплого пола" 
+                className="w-full h-64 object-cover"
+              />
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-lg mb-2">Монтаж теплого пола</h3>
+                <p className="text-gray-600 text-sm">Укладка водяного теплого пола под ключ с гарантией качества</p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img 
+                src="/img/5e671d1b-f7ce-4416-986d-f4078a8d325e.jpg" 
+                alt="Установка стиральной машины" 
+                className="w-full h-64 object-cover"
+              />
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-lg mb-2">Подключение стиральной машины</h3>
+                <p className="text-gray-600 text-sm">Профессиональная установка и подключение к водопроводу и канализации</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
