@@ -122,9 +122,13 @@ function Index() {
             </nav>
 
             <div className="hidden md:flex gap-2">
-              <Button onClick={() => scrollToSection('call-master')} variant="outline" size="sm">
-                <Icon name="Phone" size={16} className="mr-2" />
-                Вызвать мастера
+              <Button onClick={() => window.open('https://t.me/+79782973593', '_blank')} variant="outline" size="sm">
+                <Icon name="Send" size={16} className="mr-2" />
+                Telegram
+              </Button>
+              <Button onClick={() => window.open('https://wa.me/79782973593', '_blank')} className="bg-green-600 hover:bg-green-700 text-white" size="sm">
+                <Icon name="MessageCircle" size={16} className="mr-2" />
+                WhatsApp
               </Button>
               <Button onClick={() => alert('Аварийный вызов:\n+7 (978) 297-35-93\n+7 (978) 135-30-23')} className="bg-red-600 hover:bg-red-700 text-white" size="sm">
                 <Icon name="Zap" size={16} className="mr-2" />
@@ -153,27 +157,28 @@ function Index() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-accent hover:bg-accent/90 text-white"
-                  onClick={() => scrollToSection('call-master')}
+                  className="bg-green-600 hover:bg-green-700 text-white"
+                  onClick={() => window.open('https://wa.me/79782973593', '_blank')}
                 >
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  Вызвать мастера
+                  <Icon name="MessageCircle" size={20} className="mr-2" />
+                  WhatsApp
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-blue-800"
+                  onClick={() => window.open('https://t.me/+79782973593', '_blank')}
+                >
+                  <Icon name="Send" size={20} className="mr-2" />
+                  Telegram
                 </Button>
                 <Button 
                   size="lg" 
                   className="bg-red-600 hover:bg-red-700 text-white"
-                  onClick={() => alert('Аварийный вызов: +7 (495) 123-45-67\nКруглосуточно без выходных!')}
+                  onClick={() => alert('Аварийный вызов:\n+7 (978) 297-35-93\n+7 (978) 135-30-23')}
                 >
                   <Icon name="Zap" size={20} className="mr-2" />
                   Аварийный 24/7
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-white text-white hover:bg-white hover:text-blue-800"
-                  onClick={() => scrollToSection('services')}
-                >
-                  Наши услуги
                 </Button>
               </div>
             </div>
@@ -538,7 +543,26 @@ function Index() {
               <div className="space-y-2 text-gray-400">
                 <p>+7 (978) 297-35-93</p>
                 <p>+7 (978) 135-30-23</p>
-                <p>info@santekhmaster.ru</p>
+                <div className="flex gap-3 mt-3">
+                  <Button 
+                    onClick={() => window.open('https://t.me/+79782973593', '_blank')} 
+                    size="sm" 
+                    variant="outline"
+                    className="border-gray-600 text-gray-400 hover:bg-gray-800"
+                  >
+                    <Icon name="Send" size={16} className="mr-2" />
+                    Telegram
+                  </Button>
+                  <Button 
+                    onClick={() => window.open('https://wa.me/79782973593', '_blank')} 
+                    size="sm"
+                    className="bg-green-600 hover:bg-green-700 text-white"
+                  >
+                    <Icon name="MessageCircle" size={16} className="mr-2" />
+                    WhatsApp
+                  </Button>
+                </div>
+                <p className="mt-2">info@santekhmaster.ru</p>
                 <p>Симферополь, районы и Крым</p>
               </div>
             </div>
