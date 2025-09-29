@@ -151,7 +151,7 @@ function Index() {
                 Услуги сантехника <span className="text-yellow-300">Симферополь</span>
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                16 лет опыта в решении любых сантехнических проблем. 
+                16 лет опыта в решении любых сантехнических проблем в Симферополе. 
                 Гарантия качества, честные цены, быстрый выезд мастера.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -198,10 +198,10 @@ function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Наши услуги
+              Сантехнические услуги в Симферополе
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Полный спектр сантехнических работ с гарантией качества и фиксированными ценами
+              Полный спектр сантехнических работ в Симферополе, районах и по всему Крыму с гарантией качества
             </p>
           </div>
           
@@ -231,10 +231,10 @@ function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Прайс-лист
+              Цены на сантехнику в Симферополе
             </h2>
             <p className="text-lg text-gray-600">
-              Честные и фиксированные цены без скрытых доплат
+              Честные и фиксированные цены на услуги сантехника в Симферополе и районах без скрытых доплат
             </p>
           </div>
 
@@ -356,10 +356,10 @@ function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Наши работы
+              Наши работы в Симферополе
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Примеры выполненных проектов по установке оборудования и сантехнических работ
+              Примеры выполненных проектов по установке котлов, теплых полов и сантехнических работ в Симферополе и Крыму
             </p>
           </div>
           
