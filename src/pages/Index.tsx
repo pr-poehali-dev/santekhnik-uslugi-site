@@ -179,8 +179,8 @@ function Index() {
             </div>
             <div className="animate-scale-in">
               <img 
-                src="/img/e1af432d-59e4-4a4c-abe5-0a00c0101368.jpg" 
-                alt="Профессиональный сантехник" 
+                src="/img/13d718fa-0251-4793-910b-ff293ae8013e.jpg" 
+                alt="Профессиональный сантехник за работой" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
