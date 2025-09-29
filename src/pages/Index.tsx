@@ -148,7 +148,7 @@ function Index() {
                 Работаем 24/7
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Надежные сантехнические услуги
+                Услуги сантехника <span className="text-yellow-300">Симферополь</span>
               </h1>
               <p className="text-xl mb-8 text-blue-100">
                 16 лет опыта в решении любых сантехнических проблем. 
