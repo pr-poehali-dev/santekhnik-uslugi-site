@@ -90,7 +90,7 @@ function Index() {
               <Icon name="Wrench" size={32} className="text-primary" />
               <div>
                 <h1 className="text-xl font-bold text-gray-900">СантехМастер</h1>
-                <p className="text-sm text-gray-600">12 лет опыта</p>
+                <p className="text-sm text-gray-600">Симферополь и районы</p>
               </div>
             </div>
             
