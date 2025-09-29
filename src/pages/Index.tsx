@@ -50,6 +50,12 @@ function Index() {
       description: 'Полная или частичная замена водопроводных и канализационных труб',
       icon: 'Settings',
       price: 'от 3000₽'
+    },
+    {
+      title: 'Установка стиральных машин',
+      description: 'Профессиональное подключение стиральных машин с гарантией',
+      icon: 'Workflow',
+      price: 'от 2500₽'
     }
   ]
 
@@ -65,6 +71,7 @@ function Index() {
     { service: 'Замена сифона', price: '1200₽' },
     { service: 'Установка ванны', price: '8000₽' },
     { service: 'Замена труб (за метр)', price: '500₽' },
+    { service: 'Установка стиральной машины', price: '2500₽' },
     { service: 'Вызов мастера', price: '500₽' }
   ]
 
@@ -89,8 +96,8 @@ function Index() {
             <div className="flex items-center space-x-3">
               <Icon name="Wrench" size={32} className="text-primary" />
               <div>
-                <h1 className="text-xl font-bold text-gray-900">СантехМастер</h1>
-                <p className="text-sm text-gray-600">Симферополь и районы</p>
+                <h1 className="text-xl font-bold text-gray-900">Тепло в доме сантехника</h1>
+                <p className="text-sm text-gray-600">Симферополь и районы • 16 лет опыта</p>
               </div>
             </div>
             
@@ -140,7 +147,7 @@ function Index() {
                 Надежные сантехнические услуги
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                12 лет опыта в решении любых сантехнических проблем. 
+                16 лет опыта в решении любых сантехнических проблем. 
                 Гарантия качества, честные цены, быстрый выезд мастера.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -455,7 +462,7 @@ function Index() {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <Icon name="Wrench" size={28} className="text-primary" />
-                <h3 className="text-xl font-bold">СантехМастер</h3>
+                <h3 className="text-xl font-bold">Тепло в доме сантехника</h3>
               </div>
               <p className="text-gray-400">
                 Надежный партнер в решении любых сантехнических задач. 
@@ -469,6 +476,7 @@ function Index() {
                 <li>Установка котлов</li>
                 <li>Теплые полы</li>
                 <li>Капельный полив</li>
+                <li>Установка стиральных машин</li>
                 <li>Аварийная сантехника</li>
               </ul>
             </div>
@@ -485,7 +493,7 @@ function Index() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 СантехМастер. Все права защищены.</p>
+            <p>&copy; 2024 Тепло в доме сантехника. Все права защищены.</p>
           </div>
         </div>
       </footer>
