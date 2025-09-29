@@ -431,7 +431,7 @@ function Index() {
               <CardContent className="p-6">
                 <Icon name="MapPin" size={32} className="text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2">Адрес</h3>
-                <p className="text-gray-600">Москва и МО</p>
+                <p className="px-0 py-0 text-transparent">Москва и МО</p>
                 <p className="text-sm text-gray-500">Выезд в любой район</p>
               </CardContent>
             </Card>
