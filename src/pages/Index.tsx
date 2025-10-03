@@ -5,9 +5,15 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
 import Icon from '@/components/ui/icon'
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from '@/components/ui/sheet'
 
 function Index() {
   const [activeSection, setActiveSection] = useState('home')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -83,6 +89,7 @@ function Index() {
 
   const scrollToSection = (section: string) => {
     setActiveSection(section)
+    setMobileMenuOpen(false)
     const element = document.getElementById(section)
     element?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -91,16 +98,17 @@ function Index() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <Icon name="Wrench" size={32} className="text-primary" />
+            <div className="flex items-center space-x-2">
+              <Icon name="Wrench" size={28} className="text-primary" />
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Тепло в доме сантехника</h1>
-                <p className="text-sm text-gray-600">Симферополь и районы • 16 лет опыта</p>
+                <h1 className="text-base md:text-xl font-bold text-gray-900">Тепло в доме</h1>
+                <p className="text-xs md:text-sm text-gray-600">Симферополь • 16 лет</p>
               </div>
             </div>
             
+            {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6">
               {[
                 { id: 'home', label: 'Главная' },
@@ -121,6 +129,7 @@ function Index() {
               ))}
             </nav>
 
+            {/* Desktop Buttons */}
             <div className="hidden md:flex gap-2">
               <Button onClick={() => window.open('https://t.me/+79782973593', '_blank')} variant="outline" size="sm">
                 <Icon name="Send" size={16} className="mr-2" />
@@ -135,6 +144,53 @@ function Index() {
                 Аварийный 24/7
               </Button>
             </div>
+
+            {/* Mobile Menu */}
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild className="md:hidden">
+                <Button variant="ghost" size="sm">
+                  <Icon name="Menu" size={24} />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[280px]">
+                <div className="flex flex-col space-y-6 mt-8">
+                  <nav className="flex flex-col space-y-4">
+                    {[
+                      { id: 'home', label: 'Главная' },
+                      { id: 'services', label: 'Услуги' },
+                      { id: 'prices', label: 'Прайс-лист' },
+                      { id: 'experience', label: 'Наш опыт' },
+                      { id: 'contacts', label: 'Контакты' }
+                    ].map(item => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className={`text-left text-lg font-medium transition-colors hover:text-primary ${
+                          activeSection === item.id ? 'text-primary' : 'text-gray-600'
+                        }`}
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                  </nav>
+                  
+                  <div className="flex flex-col gap-3 pt-6 border-t">
+                    <Button onClick={() => window.open('https://wa.me/79782973593', '_blank')} className="bg-green-600 hover:bg-green-700 text-white w-full">
+                      <Icon name="MessageCircle" size={18} className="mr-2" />
+                      WhatsApp
+                    </Button>
+                    <Button onClick={() => window.open('https://t.me/+79782973593', '_blank')} variant="outline" className="w-full">
+                      <Icon name="Send" size={18} className="mr-2" />
+                      Telegram
+                    </Button>
+                    <Button onClick={() => alert('Аварийный вызов:\n+7 (978) 297-35-93\n+7 (978) 135-30-23')} className="bg-red-600 hover:bg-red-700 text-white w-full">
+                      <Icon name="Zap" size={18} className="mr-2" />
+                      Аварийный 24/7
+                    </Button>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </header>
