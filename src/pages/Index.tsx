@@ -808,6 +808,206 @@ function Index() {
         </div>
       </section>
 
+      {/* Reviews Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Отзывы клиентов
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Более 5000 довольных клиентов за 16 лет работы
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Review 1 */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-4 italic">
+                  "Устанавливали газовый котел под ключ. Работа выполнена на высшем уровне! 
+                  Мастера приехали вовремя, все объяснили, сделали аккуратно. 
+                  Котел работает отлично уже второй сезон. Рекомендую!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Алексей К.</p>
+                    <p className="text-sm text-gray-500">Киевский район</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Review 2 */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-4 italic">
+                  "Вызывали для установки системы капельного полива на участке. 
+                  Ребята профессионалы своего дела! Все сделали быстро, качественно. 
+                  Полив работает как часы, урожай в этом году просто отличный!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Марина С.</p>
+                    <p className="text-sm text-gray-500">Лозовое</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Review 3 */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-4 italic">
+                  "Ночью прорвало трубу - позвонили по аварийному номеру. 
+                  Мастер приехал через 40 минут! Быстро устранил протечку, 
+                  цена оказалась честной. Спасибо за оперативность!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Дмитрий П.</p>
+                    <p className="text-sm text-gray-500">Центр</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Review 4 */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-4 italic">
+                  "Делали теплый пол в доме. Очень довольны результатом! 
+                  Работу выполнили за 3 дня, всё чисто и аккуратно. 
+                  Пол греет равномерно, расход электричества умеренный. Отличная работа!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Елена В.</p>
+                    <p className="text-sm text-gray-500">Марьино</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Review 5 */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-4 italic">
+                  "Замена всей сантехники в квартире. Подошли к делу серьёзно - 
+                  посоветовали качественные материалы, сделали всё за 2 дня. 
+                  Чисто, профессионально, гарантия 2 года!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Сергей Л.</p>
+                    <p className="text-sm text-gray-500">Железнодорожный</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Review 6 */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-4 italic">
+                  "Обратились для прочистки засора. Мастер приехал быстро, 
+                  определил проблему и устранил за 30 минут. Цены адекватные, 
+                  без навязывания лишних услуг. Буду обращаться ещё!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Ольга М.</p>
+                    <p className="text-sm text-gray-500">Фонтаны</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Stats */}
+          <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div>
+                <div className="text-4xl font-bold text-primary mb-2">16</div>
+                <div className="text-gray-600 text-sm">лет опыта</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-primary mb-2">5000+</div>
+                <div className="text-gray-600 text-sm">довольных клиентов</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-primary mb-2">98%</div>
+                <div className="text-gray-600 text-sm">рекомендуют нас</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-primary mb-2">2 года</div>
+                <div className="text-gray-600 text-sm">гарантия</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Floating WhatsApp Button */}
       <a
         href="https://wa.me/79782973593"
