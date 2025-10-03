@@ -747,11 +747,11 @@ function Index() {
                         </div>
                         <div className="flex items-start">
                           <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">Москва</span>
+                          <span className="text-gray-700">Марьино</span>
                         </div>
                         <div className="flex items-start">
                           <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">Марьино</span>
+                          <span className="text-gray-700">Аэропорт</span>
                         </div>
                         <div className="flex items-start">
                           <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
