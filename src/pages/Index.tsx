@@ -662,7 +662,7 @@ function Index() {
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
             <Card className="text-center">
               <CardContent className="p-6">
                 <Icon name="Phone" size={32} className="text-primary mx-auto mb-4" />
@@ -690,6 +690,109 @@ function Index() {
                 <h3 className="font-semibold text-lg mb-2">Режим работы</h3>
                 <p className="text-gray-600">Пн-Пт: 9:00 - 17:00</p>
                 <p className="text-sm text-gray-500">Аварийные вызовы 24/7</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Service Area Map */}
+          <div className="max-w-6xl mx-auto">
+            <Card>
+              <CardContent className="p-8">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    География работы
+                  </h3>
+                  <p className="text-gray-600">
+                    Выезжаем по всему Симферополю и пригородам
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  {/* Map */}
+                  <div className="bg-gray-100 rounded-lg overflow-hidden h-[400px] flex items-center justify-center">
+                    <iframe 
+                      src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c8e3d8f8f8f8f8f8f8f8f8f8f8f8f8f&amp;source=constructor" 
+                      width="100%" 
+                      height="400" 
+                      frameBorder="0"
+                      className="w-full h-full"
+                      title="Карта Симферополя"
+                    ></iframe>
+                  </div>
+
+                  {/* Districts List */}
+                  <div>
+                    <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                      <Icon name="MapPin" size={24} className="text-primary mr-2" />
+                      Районы обслуживания
+                    </h4>
+                    
+                    <div className="space-y-3">
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="flex items-start">
+                          <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">Центр</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">Киевский</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">Залесский</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">Железнодорожный</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">Москва</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">Марьино</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">Фонтаны</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Icon name="Check" size={20} className="text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">Воронцово</span>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 p-4 bg-primary/5 rounded-lg border border-primary/20">
+                        <p className="text-sm text-gray-700 mb-3">
+                          <strong>Также работаем в пригородах:</strong>
+                        </p>
+                        <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+                          <div>• Лозовое</div>
+                          <div>• Мирное</div>
+                          <div>• Каменка</div>
+                          <div>• Пионерское</div>
+                          <div>• Грэсовский</div>
+                          <div>• Аэропорт</div>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 p-4 bg-orange-50 rounded-lg border border-orange-200">
+                        <div className="flex items-start">
+                          <Icon name="Truck" size={20} className="text-orange-600 mr-2 flex-shrink-0 mt-0.5" />
+                          <div>
+                            <p className="font-semibold text-orange-900 text-sm mb-1">
+                              Выезд за город
+                            </p>
+                            <p className="text-sm text-orange-700">
+                              Работаем по всему Крыму. Стоимость выезда обсуждается индивидуально.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
