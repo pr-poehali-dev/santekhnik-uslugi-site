@@ -121,8 +121,8 @@ function Index() {
             <div className="flex items-center space-x-2">
               <Icon name="Wrench" size={28} className="text-primary" />
               <div>
-                <h1 className="text-base md:text-xl font-bold text-gray-900">Тепло в доме</h1>
-                <p className="text-xs md:text-sm text-gray-600">Симферополь • 16 лет</p>
+                <h1 className="text-base md:text-xl font-bold text-gray-900">Сантехник Симферополь</h1>
+                <p className="text-xs md:text-sm text-gray-600">16 лет опыта • Крым</p>
               </div>
             </div>
             
@@ -607,7 +607,7 @@ function Index() {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <Icon name="Wrench" size={28} className="text-primary" />
-                <h3 className="text-xl font-bold">Тепло в доме сантехника</h3>
+                <h3 className="text-xl font-bold">Сантехник Симферополь</h3>
               </div>
               <p className="text-gray-400">
                 Надежный партнер в решении любых сантехнических задач. 
@@ -657,7 +657,7 @@ function Index() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Тепло в доме сантехника. Все права защищены.</p>
+            <p>&copy; 2024 Сантехник Симферополь. Все права защищены.</p>
           </div>
         </div>
       </footer>
