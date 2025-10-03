@@ -577,10 +577,19 @@ function Index() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">
-                  Принимаем оплату наличными и по карте. Оплата производится после выполнения работ и вашей проверки качества. 
-                  Можем выставить счёт для юридических лиц. Никаких предоплат не требуем.
-                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center text-gray-700">
+                    <Icon name="Banknote" size={20} className="text-primary mr-3 flex-shrink-0" />
+                    <span>Наличные</span>
+                  </div>
+                  <div className="flex items-center text-gray-700">
+                    <Icon name="CreditCard" size={20} className="text-primary mr-3 flex-shrink-0" />
+                    <span>Банковская карта</span>
+                  </div>
+                  <p className="text-sm text-gray-600 mt-4 pt-3 border-t border-gray-200">
+                    Оплата после выполнения работ. Никаких предоплат не требуем.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
