@@ -81,10 +81,28 @@ function Index() {
     { service: 'Вызов мастера', price: '500₽' }
   ]
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    alert('Заявка отправлена! Мастер свяжется с вами в течение 15 минут.')
-    setFormData({ name: '', phone: '', problem: '' })
+    
+    try {
+      const response = await fetch('https://functions.poehali.dev/1d988278-3f0d-4d84-948a-0bd0ed21d750', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+      
+      if (response.ok) {
+        alert('✅ Заявка успешно отправлена!\n\nМастер свяжется с вами в течение 15 минут.')
+        setFormData({ name: '', phone: '', problem: '' })
+      } else {
+        const error = await response.json()
+        alert('⚠️ Ошибка отправки заявки.\n\nПожалуйста, позвоните напрямую:\n+7 (978) 297-35-93')
+      }
+    } catch (error) {
+      alert('⚠️ Не удалось отправить заявку.\n\nПожалуйста, позвоните напрямую:\n+7 (978) 297-35-93')
+    }
   }
 
   const scrollToSection = (section: string) => {
