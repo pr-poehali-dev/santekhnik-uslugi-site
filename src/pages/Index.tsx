@@ -222,11 +222,11 @@ function Index() {
                 Работаем 24/7
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Услуги сантехника <span className="text-yellow-300">Симферополь</span>
+                Сантехник <span className="text-yellow-300">Симферополь</span>
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                16 лет опыта в решении любых сантехнических проблем в Симферополе. 
-                Гарантия качества, честные цены, быстрый выезд мастера.
+                Опытный сантехник с 16-летним стажем решит любую проблему. 
+                Вызов мастера на дом, честные цены, гарантия качества. Работаем круглосуточно.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
