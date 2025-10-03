@@ -1008,19 +1008,34 @@ function Index() {
         </div>
       </section>
 
-      {/* Floating WhatsApp Button */}
-      <a
-        href="https://wa.me/79782973593"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-2xl transition-all hover:scale-110 flex items-center justify-center group"
-        aria-label="Написать в WhatsApp"
-      >
-        <Icon name="MessageCircle" size={28} />
-        <span className="absolute right-full mr-3 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
-          Написать в WhatsApp
-        </span>
-      </a>
+      {/* Floating Action Buttons */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        {/* Call Button */}
+        <a
+          href="tel:+79782973593"
+          className="bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl transition-all hover:scale-110 flex items-center justify-center group"
+          aria-label="Позвонить"
+        >
+          <Icon name="Phone" size={28} />
+          <span className="absolute right-full mr-3 bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+            Позвонить сейчас
+          </span>
+        </a>
+
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/79782973593"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-2xl transition-all hover:scale-110 flex items-center justify-center group"
+          aria-label="Написать в WhatsApp"
+        >
+          <Icon name="MessageCircle" size={28} />
+          <span className="absolute right-full mr-3 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+            Написать в WhatsApp
+          </span>
+        </a>
+      </div>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
