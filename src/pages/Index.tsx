@@ -477,6 +477,116 @@ function Index() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Часто задаваемые вопросы
+            </h2>
+            <p className="text-lg text-gray-600">
+              Ответы на популярные вопросы о сантехнических услугах
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-start">
+                  <Icon name="HelpCircle" size={24} className="mr-3 text-primary flex-shrink-0 mt-1" />
+                  <span>Как быстро приедет сантехник после вызова?</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Мастер-сантехник приезжает в течение 1-2 часов после вызова. При аварийных ситуациях (протечки, прорывы труб) 
+                  выезжаем максимально быстро - обычно в течение 30-60 минут. Работаем круглосуточно 24/7.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-start">
+                  <Icon name="HelpCircle" size={24} className="mr-3 text-primary flex-shrink-0 mt-1" />
+                  <span>Сколько стоит вызов сантехника в Симферополе?</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Вызов мастера стоит 500₽. Диагностика проблемы бесплатная. Стоимость работ зависит от сложности: 
+                  устранение засора от 1500₽, замена смесителя от 2500₽, установка котла от 15000₽. 
+                  Точную цену называем после осмотра.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-start">
+                  <Icon name="HelpCircle" size={24} className="mr-3 text-primary flex-shrink-0 mt-1" />
+                  <span>Какая гарантия на сантехнические работы?</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Даём гарантию 2 года на все выполненные работы. Если возникнут проблемы по нашей вине - 
+                  устраним бесплатно. Используем только качественные материалы и проверенное оборудование. 
+                  16 лет опыта - гарантия надёжности.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-start">
+                  <Icon name="HelpCircle" size={24} className="mr-3 text-primary flex-shrink-0 mt-1" />
+                  <span>В какие районы Симферополя выезжает сантехник?</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Работаем по всему Симферополю и пригородам: центр, Киевский район, Железнодорожный район, 
+                  Аэрофлотский, ул. Киевская, ул. Севастопольская и все другие районы. Также выезжаем в 
+                  близлежащие населённые пункты Крыма.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-start">
+                  <Icon name="HelpCircle" size={24} className="mr-3 text-primary flex-shrink-0 mt-1" />
+                  <span>Что делать при прорыве трубы или сильной протечке?</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  1) Перекройте воду на входе в квартиру/дом. 2) Позвоните нам по номеру +7 (978) 297-35-93 - 
+                  это аварийная линия 24/7. 3) Сфотографируйте проблему для быстрой оценки. 
+                  Наш аварийный сантехник приедет в течение 30-60 минут и устранит протечку.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-start">
+                  <Icon name="HelpCircle" size={24} className="mr-3 text-primary flex-shrink-0 mt-1" />
+                  <span>Какие способы оплаты принимаете?</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Принимаем оплату наличными и по карте. Оплата производится после выполнения работ и вашей проверки качества. 
+                  Можем выставить счёт для юридических лиц. Никаких предоплат не требуем.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Call Master Form */}
       <section id="call-master" className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
