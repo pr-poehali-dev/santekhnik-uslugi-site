@@ -568,6 +568,20 @@ function Index() {
         </div>
       </section>
 
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/79782973593"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-2xl transition-all hover:scale-110 flex items-center justify-center group"
+        aria-label="Написать в WhatsApp"
+      >
+        <Icon name="MessageCircle" size={28} />
+        <span className="absolute right-full mr-3 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+          Написать в WhatsApp
+        </span>
+      </a>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
