@@ -267,6 +267,71 @@ function Index() {
         </div>
       </section>
 
+      {/* Special Offer Section */}
+      <section className="py-16 bg-gradient-to-r from-orange-500 to-red-600 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20 shadow-2xl">
+              <CardContent className="p-8 md:p-12">
+                <div className="text-center">
+                  <Badge className="mb-4 bg-yellow-400 text-orange-900 border-0 text-lg px-6 py-2 font-bold">
+                    🎁 АКЦИЯ ДЛЯ НОВЫХ КЛИЕНТОВ
+                  </Badge>
+                  <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+                    Скидка <span className="text-yellow-300">15%</span> на первый заказ!
+                  </h2>
+                  <p className="text-xl md:text-2xl mb-6 text-white/90">
+                    При заказе любой услуги — диагностика <span className="font-bold text-yellow-300">БЕСПЛАТНО</span>
+                  </p>
+                  
+                  <div className="grid md:grid-cols-3 gap-6 my-8">
+                    <div className="bg-white/20 backdrop-blur rounded-lg p-6 border border-white/30">
+                      <div className="text-4xl mb-2">💰</div>
+                      <h3 className="font-bold text-xl mb-2">Честные цены</h3>
+                      <p className="text-white/80 text-sm">Без скрытых доплат и накруток</p>
+                    </div>
+                    <div className="bg-white/20 backdrop-blur rounded-lg p-6 border border-white/30">
+                      <div className="text-4xl mb-2">⚡</div>
+                      <h3 className="font-bold text-xl mb-2">Быстро</h3>
+                      <p className="text-white/80 text-sm">Выезд мастера за 1-2 часа</p>
+                    </div>
+                    <div className="bg-white/20 backdrop-blur rounded-lg p-6 border border-white/30">
+                      <div className="text-4xl mb-2">✅</div>
+                      <h3 className="font-bold text-xl mb-2">Гарантия 2 года</h3>
+                      <p className="text-white/80 text-sm">На все виды работ</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <Button 
+                      size="lg"
+                      className="bg-yellow-400 hover:bg-yellow-500 text-orange-900 font-bold text-lg px-8 py-6"
+                      onClick={() => scrollToSection('call-master')}
+                    >
+                      <Icon name="Gift" size={24} className="mr-2" />
+                      Получить скидку 15%
+                    </Button>
+                    <Button 
+                      size="lg"
+                      variant="outline"
+                      className="border-2 border-white text-white hover:bg-white hover:text-orange-600 font-bold text-lg px-8 py-6"
+                      onClick={() => window.open('https://wa.me/79782973593?text=Здравствуйте!%20Хочу%20получить%20скидку%2015%25%20для%20новых%20клиентов', '_blank')}
+                    >
+                      <Icon name="MessageCircle" size={24} className="mr-2" />
+                      Написать в WhatsApp
+                    </Button>
+                  </div>
+
+                  <p className="text-sm text-white/70 mt-6">
+                    ⏰ Акция действует до конца месяца. Успейте воспользоваться выгодным предложением!
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20">
         <div className="container mx-auto px-4">
