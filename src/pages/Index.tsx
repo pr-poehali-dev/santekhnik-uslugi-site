@@ -222,7 +222,7 @@ function Index() {
                 Работаем 24/7
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Сантехник <span className="text-yellow-300">Симферополь</span>
+                Сантехник <span className="text-yellow-300">недорого</span> Симферополь
               </h1>
               <p className="text-xl mb-8 text-blue-100">
                 Опытный сантехник с 16-летним стажем решит любую проблему. 
