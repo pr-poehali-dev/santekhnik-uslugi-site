@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
   <url>
     <loc>https://teplo-simferopol.ru/</loc>
-    <lastmod>2024-10-03</lastmod>
+    <lastmod>2024-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    
+    <image:image>
+      <image:loc>https://teplo-simferopol.ru/img/13d718fa-0251-4793-910b-ff293ae8013e.jpg</image:loc>
+      <image:title>Профессиональный сантехник за работой</image:title>
+      <image:caption>Сантехнические услуги в Симферополе</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://teplo-simferopol.ru/img/2a5b6d57-c12d-418a-9b8a-d75bbd166a81.jpg</image:loc>
+      <image:title>Качественные сантехнические работы</image:title>
+      <image:caption>Опыт работы более 16 лет</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://teplo-simferopol.ru/img/20ca6770-16ee-42d8-b3f0-43be7dcc7a6b.jpg</image:loc>
+      <image:title>Установка газового котла</image:title>
+      <image:caption>Профессиональный монтаж котлов отопления</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://teplo-simferopol.ru/img/d69d8df5-ae1c-4113-9a91-c6fa74b54493.jpg</image:loc>
+      <image:title>Монтаж теплого пола</image:title>
+      <image:caption>Укладка водяного теплого пола под ключ</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://teplo-simferopol.ru/img/5e671d1b-f7ce-4416-986d-f4078a8d325e.jpg</image:loc>
+      <image:title>Установка стиральной машины</image:title>
+      <image:caption>Профессиональное подключение к водопроводу</image:caption>
+    </image:image>
   </url>
+  
 </urlset>

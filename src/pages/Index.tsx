@@ -490,6 +490,65 @@ function Index() {
         </div>
       </section>
 
+      {/* SEO Text Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="prose prose-lg max-w-none">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Профессиональный сантехник в Симферополе — опыт 16 лет
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-8 text-gray-700">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    Почему выбирают именно нас?
+                  </h3>
+                  <p className="mb-4">
+                    Мы — команда опытных сантехников с 16-летним стажем работы в Симферополе и по всему Крыму. 
+                    За годы работы выполнили более 5000 проектов: от простой замены смесителя до сложных систем 
+                    отопления частных домов.
+                  </p>
+                  <p className="mb-4">
+                    <strong>Наши преимущества:</strong> честное ценообразование без скрытых доплат, 
+                    использование качественных материалов, гарантия 2 года на все работы, 
+                    круглосуточная аварийная служба.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    Полный спектр сантехнических услуг
+                  </h3>
+                  <p className="mb-4">
+                    Специализируемся на <strong>установке газовых и электрических котлов</strong>, 
+                    монтаже <strong>систем теплого пола</strong>, устройстве <strong>капельного полива</strong> 
+                    для приусадебных участков. Выполняем аварийные работы: устранение протечек, 
+                    прочистка засоров, замена труб.
+                  </p>
+                  <p className="mb-4">
+                    Работаем со всеми районами Симферополя: Киевский, Железнодорожный, Центр, Залесский, 
+                    Марьино, Фонтаны, Аэропорт. Выезжаем в пригороды и по всему Крыму.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-100">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Вызов сантехника на дом в Симферополе — быстро и недорого
+                </h3>
+                <p className="text-gray-700 mb-0">
+                  Нужен <strong>срочный вызов сантехника</strong>? Звоните по номеру 
+                  <strong> +7 (978) 297-35-93</strong> или пишите в <strong>WhatsApp</strong> / <strong>Telegram</strong>. 
+                  Мастер приедет в течение 1-2 часов, при аварии — в течение 30-60 минут. 
+                  Диагностика бесплатно! Работаем без предоплаты — оплата после выполнения работ и вашей проверки качества.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
