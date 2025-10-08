@@ -71,20 +71,21 @@
 
 ---
 
-### 2. Google Search Console
+### 2. Google Search Console ✅ ГОТОВО
 **Зачем?** Для индексации в Google и аналитики
 
-**Шаги:**
+**Статус:** Мета-тег подтверждения добавлен в index.html:
+```html
+<meta name="google-site-verification" content="AgFjxkpEJTqsgZvj9eqa27OxND1r45QTuV6-HVuTSTs" />
+```
+
+**Что осталось сделать:**
 1. Перейди на https://search.google.com/search-console/
 2. Войди через Google аккаунт
 3. Нажми **"Добавить ресурс"** → выбери **"Префикс URL"**
 4. Введи `https://teplo-simferopol.ru` → нажми **"Продолжить"**
-5. **Подтверди право собственности:**
-   - Выбери **"HTML-тег"**
-   - Скопируй код вида `<meta name="google-site-verification" content="xyz456" />`
-   - Добавь его в `index.html` в секцию `<head>` после строки с yandex-verification
-6. Вернись в Search Console → нажми **"Проверить"**
-7. После подтверждения:
+5. Выбери способ **"HTML-тег"** → нажми **"Проверить"** (тег уже на сайте)
+6. После подтверждения:
    - Зайди в **"Sitemap"** (боковое меню)
    - Введи: `sitemap.xml`
    - Нажми **"Отправить"**
